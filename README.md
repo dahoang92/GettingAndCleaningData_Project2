@@ -34,7 +34,7 @@ Combine the test and the train data into one data frame
 ```{r}
 Test <- cbind(subject = subject_test$subject,activity = y_test$activity, X_test)
 Train <- cbind(subject = subject_train$subject,activity = y_train$activity, X_train)
-Data_total <- rbind(Test, Train)library("dplyr")
+Data_total <- rbind(Test, Train)
 ```
 
 Replace activity number with its label by merging the data with activity_labels, changing activity
